@@ -1,0 +1,110 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f2f2f2;
+    color: #333;
+    text-align: center;
+    padding-top: 50px;
+}
+
+h1 {
+    color: #444;
+}
+
+form {
+    margin: 20px auto;
+}
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 18px;
+    width: 200px;
+    border: 2px solid #888;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 16px;
+    margin-left: 10px;
+    background-color: #337ab7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #286090;
+}
+
+.word-length-hint {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.hint-container {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+.hint-word {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 22px;
+    letter-spacing: 4px;
+    font-weight: bold;
+    color: #d9534f;
+}
+
+.hint-button {
+    background-color: #f0ad4e;
+    margin-top: 10px;
+}
+
+.hint-button:hover {
+    background-color: #ec971f;
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.feedback-container {
+    margin-top: 20px;
+}
+
+.feedback-letter {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 4px;
+    line-height: 40px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.feedback-letter.correct {
+    background-color: #6aaa64;
+    border-color: #6aaa64;
+}
+
+.feedback-letter.present {
+    background-color: #c9b458;
+    border-color: #c9b458;
+}
+
+.feedback-letter.absent {
+    background-color: #787c7e;
+    border-color: #787c7e;
+}
