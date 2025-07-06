@@ -6,10 +6,10 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <h1>🎯 단어 추측 타이핑 게임</h1>
+    <h1>단어 맞추기</h1>
 
     {% if word_length > 0 %}
-        <p class="word-length-hint">💡 단어는 {{ word_length }}글자입니다.</p>
+        <p class="word-length-hint">단어는 {{ word_length }}글자입니다.</p>
     {% endif %}
 
     <form method="post">
@@ -20,7 +20,7 @@
     {% if hint_display %}
     <div class="hint-container">
         <p>힌트: <span class="hint-word">{{ hint_display }}</span></p>
-        <a href="{{ url_for('hint') }}"><button class="hint-button">💡 힌트 보기</button></a>
+        <a href="{{ url_for('hint') }}"><button class="hint-button">힌트 보기</button></a>
     </div>
     {% endif %}
 
